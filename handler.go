@@ -1,4 +1,4 @@
-// Assumes you have an http router listenining on 127.0.0.1 with a path of /nginx-rtmp-handler pointed to this handler
+// Assumes you have an http router listenining on 127.0.0.1:8081 with a path of /nginx-rtmp-handler pointed to this handler
 
 func NginxRtmpHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
